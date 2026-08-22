@@ -22,23 +22,25 @@ public class Splash extends Fragment {
     Context context;
     NavController navController;
     View view;
-
     @Override
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
     }
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentSplashBinding.inflate(inflater, container, false);
         return view = binding.getRoot();
     }
 
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         context = getContext();
         navController = Navigation.findNavController(view);
+
+        binding.btnComenzar.setOnClickListener(v->navController.navigate( R.id.navigation_login ));
     }
+
 }
