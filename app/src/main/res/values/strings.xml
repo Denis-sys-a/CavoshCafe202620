@@ -27,4 +27,17 @@
     <string name="no_tienes_cuenta">No tienes cuenta</string>
     <string name="registrarse_ahora">Registrarse ahora</string>
     <string name="texto_header_registrar">Vamos a registrarte</string>
+    <string name="nombres">Nombres</string>
+    <string name="passwordd">Contraseña</string>
+    <string name="confirmar_passwordd">Confirmar contraseña</string>
+    <string name="register">Registrar</string>
+    <string name="texto_register">Registrate aqui</string>
+    <string name="tienes_una_cuenta">Ya tienes una cuenta</string>
+    <string name="content_description_cafe">Granos de cafe</string>
+    <string name="comenzar">Comenzar</string>
+    <string name="content_descripcion">Logo de Cafes</string>
+    <string name="cambiar">Cambiar Cafe</string>
+    <string name="cavosh">Cavosh</string>
+    <string name="text_cavosh">Cavosh</string>
+    <string name="texto_frecuentemente_ordenados">Frecuentemenete ordenados...</string>
 </resources>
