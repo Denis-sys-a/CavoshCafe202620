@@ -7,4 +7,24 @@
     <string name="favoritos">Favoritos</string>
     <string name="inicio">Inicio</string>
     <string name="perfil">Perfil</string>
+    <string name="correo">Correo</string>
+    <string name="registrar">Registrar</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="vamos_a_iniciar_sesion">Vamos a Iniciar Sesión</string>
+    <string name="texto_header_login">Vamos a Iniciar Sesion</string>
+    <string name="password_recovery">Recuperar contraseña</string>
+    <string name="signed">Iniciar Sesión</string>
+    <string name="texto_login">Inicia sesion usando</string>
+    <string name="content_description">Este es el boton para presionar facebook</string>
+    <string name="ct_facebook">Este es el boton para presionar Facebook</string>
+    <string name="ct_google">Este es el boton para presionar Google</string>
+    <string name="ct_apple">Este es el boton para presionar Apple</string>
+    <string name="no_tienes_una_cuenta">No tienes una cuenta</string>
+    <string name="password">Contraseña</string>
+    <string name="texto_facebook">Este es el boton para Facebook</string>
+    <string name="texto_google">Este es el boton para Google</string>
+    <string name="texto_apple">Este es el boton para Apple</string>
+    <string name="no_tienes_cuenta">No tienes cuenta</string>
+    <string name="registrarse_ahora">Registrarse ahora</string>
+    <string name="texto_header_registrar">Vamos a registrarte</string>
 </resources>
