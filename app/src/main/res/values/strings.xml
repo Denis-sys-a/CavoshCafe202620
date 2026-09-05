@@ -44,6 +44,6 @@
     <string name="saludo_usuario">Buenos dias, usuario</string>
     <string name="tu_cafe_label">Your cafe: Cavosh Cafe</string>
     <string name="direccion_cafe">Arenales 471, Lima</string>
-    <string name="buscar_hint">Bursar</string>
+    <string name="buscar_hint">Buscar</string>
     <string name="texto_novedades">Novedades</string>
 </resources>
