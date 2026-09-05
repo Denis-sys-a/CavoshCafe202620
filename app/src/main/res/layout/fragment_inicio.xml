@@ -173,6 +173,7 @@
             app:layout_constraintTop_toBottomOf="@id/tvNewIn"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            tools:itemCount="4"
             tools:listitem="@layout/item_producto_nuevo" />
 
         <TextView
@@ -195,10 +196,13 @@
             android:nestedScrollingEnabled="false"
             android:paddingHorizontal="20dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintTop_toBottomOf="@id/tvFrequentlyOrdered"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFrequentlyOrdered"
+            app:layout_constraintVertical_bias="1.0"
+            tools:itemCount="4"
             tools:listitem="@layout/item_producto_frecuente" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
