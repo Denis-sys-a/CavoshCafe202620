@@ -9,31 +9,71 @@
     tools:context=".ui.Splash">
 
     <ImageView
-        android:layout_width="108dp"
-        android:layout_height="108dp"
-        android:contentDescription="@string/content_description"
-        android:elevation="5dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="-24dp"
+        android:layout_marginEnd="-24dp"
+        android:alpha="0.5"
+        android:contentDescription="@string/content_description_cafe"
+        android:scaleType="centerCrop"
         android:src="@drawable/logo_cafes"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
-        android:layout_width="384dp"
-        android:layout_height="384dp"
-        android:contentDescription="@string/content_description"
+        android:id="@+id/ivIlustracion"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="72dp"
+        android:contentDescription="@string/content_descripcion"
         android:elevation="5dp"
         android:src="@drawable/logo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvWelcomeTo"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/tvWelcomeTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/bienvenido_a"
+        android:textColor="@color/flesh"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/ivIlustracion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvCavosh" />
+
+    <TextView
+        android:id="@+id/tvCavosh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="serif"
+        android:text="@string/cavosh"
+        android:textColor="@color/carmine_pink"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeTo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <Button
         android:id="@+id/btnComenzar"
-        android:layout_width="240dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/sh_btn_gunmetal"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
         android:text="@string/comenzar"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -41,6 +81,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

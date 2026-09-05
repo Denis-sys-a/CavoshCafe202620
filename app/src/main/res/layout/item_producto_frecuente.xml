@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivProductoFrecuente"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tvNombreFrecuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/gunmetal"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/ivProductoFrecuente"
+            app:layout_constraintStart_toEndOf="@id/ivProductoFrecuente"
+            app:layout_constraintEnd_toStartOf="@id/ivAgregarFrecuente"
+            tools:text="Caramel Macchiato" />
+
+        <TextView
+            android:id="@+id/tvDetalleFrecuente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/steel_teal"
+            android:textSize="13sp"
+            app:layout_constraintTop_toBottomOf="@id/tvNombreFrecuente"
+            app:layout_constraintStart_toStartOf="@id/tvNombreFrecuente"
+            app:layout_constraintEnd_toEndOf="@id/tvNombreFrecuente"
+            tools:text="Large, Oat milk" />
+
+        <TextView
+            android:id="@+id/tvPrecioFrecuente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/carmine_pink"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvDetalleFrecuente"
+            app:layout_constraintStart_toStartOf="@id/tvNombreFrecuente"
+            app:layout_constraintBottom_toBottomOf="@id/ivProductoFrecuente"
+            tools:text="S/4.70" />
+
+        <ImageView
+            android:id="@+id/ivAgregarFrecuente"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/sh_notificacion_on"
+            android:clickable="true"
+            android:contentDescription="@string/content_description"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_mas"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
