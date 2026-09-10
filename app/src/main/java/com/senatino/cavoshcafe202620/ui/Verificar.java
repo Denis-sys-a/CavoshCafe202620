@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,8 +15,6 @@ import android.view.ViewGroup;
 
 import com.senatino.cavoshcafe202620.R;
 import com.senatino.cavoshcafe202620.databinding.FragmentVerificarBinding;
-import com.senatino.cavoshcafe202620.databinding.FragmentVerificarBinding;
-
 public class Verificar extends Fragment {
     FragmentVerificarBinding binding;
     Context context;

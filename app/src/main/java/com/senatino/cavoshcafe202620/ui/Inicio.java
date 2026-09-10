@@ -9,7 +9,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
