@@ -39,6 +39,8 @@ public class Login extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         context = getContext();
-        navController = Navigation.findNavController( view );
+        navController = Navigation.findNavController(view);
+
+        binding.btnIniciarSesion.setOnClickListener(v -> navController.navigate(R.id.navigation_inicio));
     }
 }

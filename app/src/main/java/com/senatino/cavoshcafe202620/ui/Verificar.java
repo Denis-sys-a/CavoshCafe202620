@@ -13,7 +13,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.senatino.cavoshcafe202620.R;
 import com.senatino.cavoshcafe202620.databinding.FragmentVerificarBinding;
 public class Verificar extends Fragment {
     FragmentVerificarBinding binding;
