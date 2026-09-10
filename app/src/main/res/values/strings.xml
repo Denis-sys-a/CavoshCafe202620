@@ -46,4 +46,9 @@
     <string name="direccion_cafe">Arenales 471, Lima</string>
     <string name="buscar_hint">Buscar</string>
     <string name="texto_novedades">Novedades</string>
+    <string name="texto_categorias">Categories</string>
+    <string name="cat_bebidas_calientes">Hot drinks</string>
+    <string name="cat_bebidas_frias">Cold drinks</string>
+    <string name="cat_snacks">Snacks</string>
+    <string name="cat_todos">All</string>
 </resources>

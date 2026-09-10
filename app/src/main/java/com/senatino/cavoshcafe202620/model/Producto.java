@@ -8,6 +8,7 @@ public class Producto {
     private final String detalle;
     private final int imagenResId;
     private final String imagenUrl;
+    private boolean favorito;
 
     public Producto(int id, String nombre, double precio, String detalle, int imagenResId, String imagenUrl) {
         this.id = id;
@@ -16,6 +17,7 @@ public class Producto {
         this.detalle = detalle;
         this.imagenResId = imagenResId;
         this.imagenUrl = imagenUrl;
+        this.favorito = false;
     }
 
     public int getId() {
@@ -40,5 +42,13 @@ public class Producto {
 
     public String getImagenUrl() {
         return imagenUrl;
+    }
+
+    public boolean isFavorito() {
+        return favorito;
+    }
+
+    public void setFavorito(boolean favorito) {
+        this.favorito = favorito;
     }
 }
