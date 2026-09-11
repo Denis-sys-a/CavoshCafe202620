@@ -82,6 +82,11 @@ public class Menu extends Fragment {
                         : producto.getNombre() + " quitado de favoritos";
                 Toast.makeText(context, mensaje, Toast.LENGTH_SHORT).show();
             }
+
+            @Override
+            public void onProductoClick(Producto producto) {
+                Navigation.findNavController(requireView()).navigate(R.id.action_navigation_menu_to_navigation_detalle_producto);
+            }
         });
 
         adapter.setProductos(obtenerProductosGridMock());

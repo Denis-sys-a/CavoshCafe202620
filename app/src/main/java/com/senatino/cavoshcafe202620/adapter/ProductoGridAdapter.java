@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.senatino.cavoshcafe202620.R;
@@ -20,6 +21,7 @@ public class ProductoGridAdapter extends RecyclerView.Adapter<ProductoGridAdapte
     public interface OnProductoGridListener {
         void onAgregarClick(Producto producto);
         void onFavoritoClick(Producto producto);
+        void onProductoClick(Producto producto);
     }
 
     private List<Producto> productos = new ArrayList<>();
@@ -72,6 +74,15 @@ public class ProductoGridAdapter extends RecyclerView.Adapter<ProductoGridAdapte
             }
 
             actualizarIconoFavorito(producto);
+
+            // 2. CLIC EN TODA LA TARJETA DEL PRODUCTO
+            binding.getRoot().setOnClickListener(v -> {
+                if (listener != null) {
+                    listener.onProductoClick(producto);
+                } else {
+                    Navigation.findNavController(v).navigate(R.id.action_navigation_menu_to_navigation_detalle_producto);
+                }
+            });
 
             binding.ivFavoritoGrid.setOnClickListener(v -> {
                 producto.setFavorito(!producto.isFavorito());

@@ -51,4 +51,19 @@
     <string name="cat_bebidas_frias">Cold drinks</string>
     <string name="cat_snacks">Snacks</string>
     <string name="cat_todos">All</string>
+    <string name="producto_size_label">Size</string>
+    <string name="producto_customize_label">Customize your coffee</string>
+    <string name="talla_small">Small</string>
+    <string name="talla_medium">Medium</string>
+    <string name="talla_large">Large</string>
+    <string name="etiqueta_milk">Milk</string>
+    <string name="valor_milk">Oat</string>
+    <string name="etiqueta_cream">Cream</string>
+    <string name="valor_cream">No</string>
+    <string name="etiqueta_cafeina">Caffeine</string>
+    <string name="valor_cafeina">Yes</string>
+    <string name="texto_total_price">Total price</string>
+    <string name="texto_add_to_cart">Add to cart</string>
+    <string name="volumen_250ml">250ml</string>
+    <string name="descripcion_producto_mock">Our Caramel Macchiato is the perfect combination of a rich-tasting espresso, creamy milk and the sweet, buttery aroma of caramel.</string>
 </resources>

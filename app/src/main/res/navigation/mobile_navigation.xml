@@ -65,5 +65,14 @@
         android:id="@+id/navigation_menu"
         android:name="com.senatino.cavoshcafe202620.ui.Menu"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" />
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_navigation_menu_to_navigation_detalle_producto"
+            app:destination="@id/navigation_detalle_producto" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_detalle_producto"
+        android:name="com.senatino.cavoshcafe202620.ui.DetalleProductoFragment"
+        android:label="fragment_detalle_producto"
+        tools:layout="@layout/fragment_detalle_producto" />
 </navigation>

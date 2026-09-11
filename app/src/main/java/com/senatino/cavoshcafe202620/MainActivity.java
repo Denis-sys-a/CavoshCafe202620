@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         navController.addOnDestinationChangedListener((navController1, navDestination, bundle) -> {
             int id = navDestination.getId();
             if ( id == R.id.navigation_splash || id == R.id.navigation_login ||
-                    id == R.id.navigation_registrar ) {
+                    id == R.id.navigation_registrar || id == R.id.navigation_detalle_producto) {
                 navView.setVisibility(View.INVISIBLE);
             } else {
                 navView.setVisibility(View.VISIBLE);

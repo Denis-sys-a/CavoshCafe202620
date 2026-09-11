@@ -31,6 +31,7 @@
                 android:id="@+id/ivProductoGrid"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:contentDescription="@null"
                 android:scaleType="centerCrop"
                 tools:src="@drawable/logo" />
 
@@ -43,7 +44,7 @@
             android:layout_margin="6dp"
             android:background="@drawable/sh_btn_circulo_blanco"
             android:clickable="true"
-            android:contentDescription="@string/content_description"
+            android:contentDescription="@null"
             android:elevation="2dp"
             android:focusable="true"
             android:padding="6dp"
