@@ -23,7 +23,13 @@
         android:id="@+id/navigation_login"
         android:name="com.senatino.cavoshcafe202620.ui.Login"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_registrar"
+            app:destination="@id/navigation_registrar"
+            app:popUpTo="@id/navigation_login"
+            app:popUpToInclusive="true" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_favoritos"
         android:name="com.senatino.cavoshcafe202620.ui.Favoritos"
@@ -38,7 +44,13 @@
         android:id="@+id/navigation_registrar"
         android:name="com.senatino.cavoshcafe202620.ui.Registrar"
         android:label="fragment_registrar"
-        tools:layout="@layout/fragment_registrar" />
+        tools:layout="@layout/fragment_registrar">
+        <action
+            android:id="@+id/action_navigation_registrar_to_navigation_login"
+            app:destination="@id/navigation_login"
+            app:popUpTo="@id/navigation_registrar"
+            app:popUpToInclusive="true" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_verificar"
         android:name="com.senatino.cavoshcafe202620.ui.Verificar"

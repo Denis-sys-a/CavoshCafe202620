@@ -32,7 +32,7 @@ public class Registrar extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentRegistrarBinding.inflate(inflater, container, false );
+        binding = FragmentRegistrarBinding.inflate(inflater, container, false);
         return view = binding.getRoot();
     }
 
@@ -40,6 +40,12 @@ public class Registrar extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         context = getContext();
-        navController = Navigation.findNavController( view );
+        navController = Navigation.findNavController(view);
+
+        binding.tvIniciarSesion.setOnClickListener(v ->
+                navController.navigate(R.id.action_navigation_registrar_to_navigation_login));
+
+        binding.tvIniciarSesionAhora.setOnClickListener(v ->
+                navController.navigate(R.id.action_navigation_registrar_to_navigation_login));
     }
 }

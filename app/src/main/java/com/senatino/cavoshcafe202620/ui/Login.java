@@ -31,7 +31,7 @@ public class Login extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentLoginBinding.inflate(inflater, container, false );
+        binding = FragmentLoginBinding.inflate(inflater, container, false);
         return view = binding.getRoot();
     }
 
@@ -42,5 +42,11 @@ public class Login extends Fragment {
         navController = Navigation.findNavController(view);
 
         binding.btnIniciarSesion.setOnClickListener(v -> navController.navigate(R.id.navigation_inicio));
+
+        binding.tvRegistrar.setOnClickListener(v ->
+                navController.navigate(R.id.action_navigation_login_to_navigation_registrar));
+
+        binding.tvRegistrarAhora.setOnClickListener(v ->
+                navController.navigate(R.id.action_navigation_login_to_navigation_registrar));
     }
 }
