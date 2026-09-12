@@ -69,4 +69,5 @@
     <string name="favorites_titulo">Favorites</string>
     <string name="texto_editar">Edit</string>
     <string name="items_formato">%d items</string>
+    <string name="simbolo_moneda">S/</string>
 </resources>

@@ -1,54 +1,60 @@
 package com.senatino.cavoshcafe202620.model;
 
 public class Producto {
-
-    private final int id;
-    private final String nombre;
-    private final double precio;
-    private final String detalle;
-    private final int imagenResId;
-    private final String imagenUrl;
-    private boolean favorito;
-
-    public Producto(int id, String nombre, double precio, String detalle, int imagenResId, String imagenUrl) {
-        this.id = id;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.detalle = detalle;
-        this.imagenResId = imagenResId;
-        this.imagenUrl = imagenUrl;
-        this.favorito = false;
-    }
+    int id, Categoria, Nuevo;
+    String Detalle, Descripcion;
+    double Precio;
 
     public int getId() {
         return id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public double getPrecio() {
-        return precio;
+    public int getCategoria() {
+        return Categoria;
+    }
+
+    public void setCategoria(int categoria) {
+        Categoria = categoria;
+    }
+
+    public int getNuevo() {
+        return Nuevo;
+    }
+
+    public void setNuevo(int nuevo) {
+        Nuevo = nuevo;
     }
 
     public String getDetalle() {
-        return detalle;
+        return Detalle;
     }
 
-    public int getImagenResId() {
-        return imagenResId;
+    public void setDetalle(String detalle) {
+        Detalle = detalle;
     }
 
-    public String getImagenUrl() {
-        return imagenUrl;
+    public String getDescripcion() {
+        return Descripcion;
     }
 
-    public boolean isFavorito() {
-        return favorito;
+    public void setDescripcion(String descripcion) {
+        Descripcion = descripcion;
     }
 
-    public void setFavorito(boolean favorito) {
-        this.favorito = favorito;
+    public double getPrecio() {
+        return Precio;
     }
+
+    public void setPrecio(double precio) {
+        Precio = precio;
+    }
+
+    public boolean isNuevo() {
+        return Nuevo == 1;
+    }
+
 }

@@ -65,8 +65,7 @@ public class FavoritoAdapter extends RecyclerView.Adapter<FavoritoAdapter.Favori
         void bind(Producto producto, OnFavoritoAgregarListener listener) {
             binding.tvNombreFavorito.setText(producto.getNombre());
             binding.tvDetalleFavorito.setText(producto.getDetalle());
-            binding.tvPrecioFavorito.setText(
-                    String.format(Locale.getDefault(), "S/%.2f", producto.getPrecio()));
+            binding.tvMontoFavorito.setText(String.format(Locale.getDefault(), "%.2f", producto.getPrecio()));
 
             if (producto.getImagenUrl() != null && !producto.getImagenUrl().isEmpty()) {
                 Picasso.get().load(producto.getImagenUrl()).into(binding.ivProductoFavorito);
