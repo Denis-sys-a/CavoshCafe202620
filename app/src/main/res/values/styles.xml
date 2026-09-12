@@ -1,0 +1,6 @@
+<style name="ShapeAppearance.Button.EsquinaInferiorDerecha" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+    <item name="cornerSizeTopLeft">18dp</item>
+    <item name="cornerSizeTopRight">0dp</item>
+    <item name="cornerSizeBottomLeft">0dp</item>
+    <item name="cornerSizeBottomRight">24dp</item>
+</style>
