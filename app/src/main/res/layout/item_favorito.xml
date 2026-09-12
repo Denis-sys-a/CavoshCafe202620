@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="88dp"
+        android:padding="10dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvImagenFavorito"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            app:cardBackgroundColor="@color/bright_gray"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/ivProductoFavorito"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                tools:src="@drawable/logo" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvNombreFavorito"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="46dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/gunmetal"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cvImagenFavorito"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Caramel Macchiato" />
+
+        <TextView
+            android:id="@+id/tvDetalleFavorito"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/steel_teal"
+            android:textSize="13sp"
+            app:layout_constraintTop_toBottomOf="@id/tvNombreFavorito"
+            app:layout_constraintStart_toStartOf="@id/tvNombreFavorito"
+            app:layout_constraintEnd_toEndOf="@id/tvNombreFavorito"
+            tools:text="Large, Oat milk" />
+
+        <TextView
+            android:id="@+id/tvPrecioFavorito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/carmine_pink"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvDetalleFavorito"
+            app:layout_constraintStart_toStartOf="@id/tvNombreFavorito"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="S/6.70" />
+
+        <ImageView
+            android:id="@+id/ivAgregarFavorito"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/sh_btn_agregar_esquina"
+            android:clickable="true"
+            android:contentDescription="@string/content_description"
+            android:focusable="true"
+            android:padding="9dp"
+            android:src="@drawable/ic_mas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

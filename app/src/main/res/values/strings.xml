@@ -66,4 +66,7 @@
     <string name="texto_add_to_cart">Add to cart</string>
     <string name="volumen_250ml">250ml</string>
     <string name="descripcion_producto_mock">Our Caramel Macchiato is the perfect combination of a rich-tasting espresso, creamy milk and the sweet, buttery aroma of caramel.</string>
+    <string name="favorites_titulo">Favorites</string>
+    <string name="texto_editar">Edit</string>
+    <string name="items_formato">%d items</string>
 </resources>
