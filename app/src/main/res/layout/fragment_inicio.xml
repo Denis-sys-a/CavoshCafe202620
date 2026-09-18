@@ -9,7 +9,7 @@
     android:fillViewport="true"
     android:clipToPadding="false"
     android:paddingBottom="100dp"
-    tools:context=".ui.Inicio">
+    tools:context=".ui.inicio.Inicio">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

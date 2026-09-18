@@ -9,7 +9,7 @@
     android:fillViewport="true"
     android:clipToPadding="false"
     android:paddingBottom="100dp"
-    tools:context=".ui.Menu">
+    tools:context=".ui.productos.Menu">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
