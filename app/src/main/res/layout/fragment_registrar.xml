@@ -7,15 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.auth.Registrar">
 
-    <ImageView
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:contentDescription="@string/content_description_cafe"
-        android:elevation="1dp"
-        android:src="@drawable/logo_cafes"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
     <TextView
         android:id="@+id/tvHeader"
         android:layout_width="match_parent"
@@ -29,6 +20,17 @@
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivLogoCafes"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_cafes"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
     <TextView
         android:id="@+id/tvIniciarSesion"
@@ -67,24 +69,23 @@
         android:id="@+id/tilNombres"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        app:endIconMode="clear_text"
+        android:layout_marginTop="32dp"
         app:hintEnabled="false"
+        app:boxBackgroundMode="none"
+        app:endIconMode="clear_text"
         app:layout_constraintTop_toBottomOf="@id/tvIniciarSesion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/sh_tv_bright_gray"
             android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
             android:inputType="textPersonName"
             android:maxLength="50"
-            android:hint="@string/nombres">
-
-        </com.google.android.material.textfield.TextInputEditText>
-
+            android:hint="@string/nombres"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -92,23 +93,22 @@
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:endIconMode="clear_text"
         app:hintEnabled="false"
+        app:boxBackgroundMode="none"
+        app:endIconMode="clear_text"
         app:layout_constraintTop_toBottomOf="@id/tilNombres"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/sh_tv_bright_gray"
             android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
             android:inputType="textEmailAddress"
             android:maxLength="50"
-            android:hint="@string/correo">
-
-        </com.google.android.material.textfield.TextInputEditText>
-
+            android:hint="@string/correo"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -117,6 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:hintEnabled="false"
+        app:boxBackgroundMode="none"
         app:endIconMode="password_toggle"
         app:layout_constraintTop_toBottomOf="@id/tilCorreo"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,15 +125,13 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/sh_tv_bright_gray"
             android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
             android:inputType="textPassword"
             android:maxLength="20"
-            android:hint="@string/passwordd">
-
-        </com.google.android.material.textfield.TextInputEditText>
-
+            android:hint="@string/contraseña"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -148,15 +147,13 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/sh_tv_bright_gray"
             android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
             android:inputType="textPassword"
             android:maxLength="20"
-            android:hint="@string/confirmar_passwordd">
-
-        </com.google.android.material.textfield.TextInputEditText>
-
+            android:hint="@string/confirmar_contraseña"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -165,7 +162,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/sh_btn_gunmetal"
-        android:text="@string/register"
+        android:text="@string/registrer"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -177,7 +174,8 @@
     <View
         android:layout_width="96dp"
         android:layout_height="2dp"
-        android:layout_margin="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="32dp"
         android:background="@color/carmine_pink"
         app:layout_constraintTop_toBottomOf="@id/btnRegistrar"
         app:layout_constraintStart_toStartOf="parent" />
@@ -185,7 +183,8 @@
     <View
         android:layout_width="96dp"
         android:layout_height="2dp"
-        android:layout_margin="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
         android:background="@color/carmine_pink"
         app:layout_constraintTop_toBottomOf="@id/btnRegistrar"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -193,7 +192,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:text="@string/texto_register"
         android:textColor="@color/gunmetal"
         android:textStyle="bold"
@@ -205,7 +204,7 @@
         android:id="@+id/ivFacebook"
         android:layout_width="108dp"
         android:layout_height="84dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="64dp"
         android:layout_marginStart="32dp"
         android:background="@drawable/sh_btn_flesh"
         android:contentDescription="@string/texto_facebook"
@@ -220,7 +219,7 @@
         android:id="@+id/ivGoogle"
         android:layout_width="108dp"
         android:layout_height="84dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/sh_btn_flesh"
         android:contentDescription="@string/texto_google"
         android:clickable="true"
@@ -235,7 +234,7 @@
         android:id="@+id/ivApple"
         android:layout_width="108dp"
         android:layout_height="84dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/sh_btn_flesh"
         android:contentDescription="@string/texto_apple"
@@ -269,7 +268,5 @@
             android:text="@string/iniciar_sesion"
             android:textColor="@color/carmine_pink"
             android:textStyle="bold"/>
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
