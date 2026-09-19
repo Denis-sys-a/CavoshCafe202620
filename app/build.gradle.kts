@@ -4,16 +4,16 @@ plugins {
 
 android {
     namespace = "com.senatino.cavoshcafe202620"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.senatino.cavoshcafe202620"
-        minSdk = 30
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.tes   t.runner.AndroidJUnitRunner"
     }
 
     buildTypes {

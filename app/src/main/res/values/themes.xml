@@ -1,8 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Tema Base de Cavosh Café -->
     <style name="Base.Theme.CavoshCafe202620" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/carmine_pink</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/flesh</item>
+        <item name="colorOnPrimaryContainer">@color/carmine_pink</item>
+
+        <item name="colorSecondary">@color/police_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/steel_teal</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+
+        <item name="android:statusBarColor">@color/police_blue</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/bright_gray</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/texto_oscuro</item>
+        <item name="colorOnSurfaceVariant">@color/texto_secundario</item>
+
     </style>
 
     <style name="Theme.CavoshCafe202620" parent="Base.Theme.CavoshCafe202620" />

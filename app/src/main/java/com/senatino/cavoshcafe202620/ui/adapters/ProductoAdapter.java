@@ -41,8 +41,8 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.ViewHo
         Picasso.get()
                 .load("URL...." + producto.getId() + ".jpg" )
                 .fit().centerCrop()
-                .placeholder(R.drawable.ic_imagen)
-                .error( R.drawable.ic_imagen )
+                .placeholder(R.drawable.logo)
+                .error( R.drawable.logo )
                 .into( holder.ivProducto );
 
         holder.itemView.setOnClickListener(v -> {
@@ -56,15 +56,14 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.ViewHo
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView imgProducto, imgPlus, imgFavorite;
+        ImageView ivProducto;
         TextView tvNombreProducto, tvPrecioProducto;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imgProducto = itemView.findViewById(R.id.ivProducto);
-            imgPlus = itemView.findViewById(R.id.ivAgregar);
             tvNombreProducto = itemView.findViewById(R.id.tvNombreProducto);
             tvPrecioProducto = itemView.findViewById(R.id.tvPrecioProducto);
+            ivProducto = itemView.findViewById(R.id.ivProducto);
         }
     }
 

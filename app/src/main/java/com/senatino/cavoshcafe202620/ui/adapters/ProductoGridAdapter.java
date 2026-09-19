@@ -68,9 +68,9 @@ public class ProductoGridAdapter extends RecyclerView.Adapter<ProductoGridAdapte
                     String.format(Locale.getDefault(), "S/%.2f", producto.getPrecio()));
 
             if (producto.getImagenUrl() != null && !producto.getImagenUrl().isEmpty()) {
-                Picasso.get().load(producto.getImagenUrl()).into(binding.ivProductoGrid);
+                Picasso.get().load(producto.getImagenUrl()).into(binding.ivProducto);
             } else if (producto.getImagenResId() != 0) {
-                binding.ivProductoGrid.setImageResource(producto.getImagenResId());
+                binding.ivProducto.setImageResource(producto.getImagenResId());
             }
 
             actualizarIconoFavorito(producto);
