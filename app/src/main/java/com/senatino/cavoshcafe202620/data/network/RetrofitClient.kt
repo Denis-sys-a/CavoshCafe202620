@@ -1,33 +1,29 @@
 package com.senatino.cavoshcafe202620.data.network
 
 import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.concurrent.TimeUnit
 
 object RetrofitClient {
-
-    // Cambia la IP según tu entorno (10.0.2.2 para emulador de Android Studio)
+    // 10.0.2.2 apunta a localhost de la PC desde el emulador Android
     private const val BASE_URL = "http://10.0.2.2:8080/"
 
-    private val loggingInterceptor = HttpLoggingInterceptor().apply {
-        level = HttpLoggingInterceptor.Level.BODY
-    }
+    // Variable para almacenar temporalmente el token en memoria
+    var token: String? = null
 
     private val okHttpClient = OkHttpClient.Builder()
-        .addInterceptor(loggingInterceptor)
-        .connectTimeout(30, TimeUnit.SECONDS)
-        .readTimeout(30, TimeUnit.SECONDS)
+        .addInterceptor(AuthInterceptor { token })
         .build()
 
-    val retrofit: Retrofit = Retrofit.Builder()
-        .baseUrl(BASE_URL)
-        .client(okHttpClient)
-        .addConverterFactory(GsonConverterFactory.create())
-        .build()
-
-    val authApiService: AuthApiService by lazy {
-        retrofit.create(AuthApiService::class.java)
+    private val retrofit: Retrofit by lazy {
+        Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .client(okHttpClient)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
     }
+
+    val authApiService: AuthApiService by lazy { retrofit.create(AuthApiService::class.java) }
+    val productApiService: ProductApiService by lazy { retrofit.create(ProductApiService::class.java) }
+    val orderApiService: OrderApiService by lazy { retrofit.create(OrderApiService::class.java) }
 }
